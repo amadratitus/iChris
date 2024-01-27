@@ -7,7 +7,7 @@
   <!-- Favicon -->
   <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
   <!-- Meta Description -->
-  <meta name="description" content="Your meta description goes here.">
+  <meta name="description" content="Your Best Service delivery company through IT solutions.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Owl Carousel CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -18,12 +18,29 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!--Ads Script Start-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3182239353501543"
+     crossorigin="anonymous"></script>
+  <!--Ads Script-->
+  <style>
+  /* CSS for image styling */
+  .owl-carousel img {
+    width: 100%; /* Set the width to 100% of the container */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 100px; /* Set a maximum height if needed */
+    display: block; /* Remove any extra spacing below the images */
+    margin: 0 auto; /* Center the images within the container */
+  }
+</style>
 </head>
 <body>
   <!-- top navbar -->
 <nav class="navbar navbar-expand-sm bg-light navbar-light fw-bold sticky-top">
-  <div class="container">
-    <a class="navbar-brand" href="#">iChris Technologies</a>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/iChris Logo.png" alt="" width="60" height="35" class="d-inline-block align-text-top">
+      iChris Technologies
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -45,7 +62,7 @@
           <a class="nav-link" href="#partners">Our Partners</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="#contact"><button type="button" class="btn btn-outline-primary rounded">Contact</button></a>
         </li>  
       </ul>
     </div>
@@ -187,7 +204,7 @@
       </div>
     </div>
     <!-- Service 10 Card -->
-    <div class="col">
+    <!-- <div class="col">
       <div class="card h-100">
         <img src="./assets/devops.jpg" class="card-img-top" alt="Service 10 Image">
         <div class="card-body">
@@ -195,16 +212,19 @@
           <p class="card-text">Description of Service 10 goes here.</p>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Add more service cards as needed -->
   </div>
 </div>
 
 <!-- why choose us -->
-<div id="choose" class="container mt-5 text-center">
-  <h2 class="text-primary">Why Choose Us</h2>
+<div id="choose" class="container mt-5">
+  <h2 class="text-primary text-center">Why Choose Us</h2>
   <!-- Add reasons to choose your company -->
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tincidunt elit.</p>
+  <p><strong>iChris Technologies</strong> discovers, develops, and deploys young African tech talent into the exciting tech ecosystem, through accelerated, immersive, 
+    project-based online tech training programs and later connecting our brilliant tech talent with diverse local and global work opportunities.
+    Our learning model is practical, engaging and ensures our fellows are collaborating on actual platforms and tools used by end users. 
+    This allows them to have end to end exposure to dealing with clients, prioritizing feedback, testing and quality assurance, and problem solving.</p>
   <p>Phasellus eget leo vitae justo varius dignissim. Fusce vel ex id lacus malesuada efficitur.</p>
   <!-- Add more reasons as needed -->
 </div>
@@ -248,38 +268,85 @@
 <div id="partners" class="container mt-5 text-center">
   <h2 class="text-primary">Our Partners</h2>
   <div class="owl-carousel owl-theme">
-    <div class="item"><img src="./assets/partners/gdsckyu.png" alt="Partner 1"></div>
-    <div class="item"><img src="./assets/partners/ieeekyu.png" alt="Partner 2"></div>
-    <div class="item"><img src="./assets/partners/kyucsakyu.png" alt="Partner 3"></div>
-    <div class="item"><img src="./assets/partners/./gdsckyu.png" alt="Partner 4"></div>
+    <div class="item p-5"><img src="./assets/partners/gdsckyu.png" alt="Partner 1"></div>
+    <div class="item p-5"><img src="./assets/partners/ieeekyu.png" alt="Partner 2"></div>
+    <div class="item p-5"><img src="./assets/partners/kyucsakyu.png" alt="Partner 3"></div>
+    <div class="item p-5"><img src="./assets/partners/./gdsckyu.png" alt="Partner 4"></div>
     <!-- Add more partners as needed -->
   </div>
 </div>
 
+<!--Contact Us-->
+<div id="contact" class="container mt-5">
+  <h2 class="text-primary text-center">Contact Us</h2>
+  <div class="row">
+    <div class="card p-2">
+      <div class="row">
+        <!--contact form-->
+      <div class="col">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control form-control-sm" id="firstName">
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control form-control-sm" id="lastName">
+          </div>
+          <div class="col-12">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control form-control-sm" id="email" placeholder="example@yourdomain.com">
+          </div>
+          <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control form-control-sm" rows="5" id="comment" name="text"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+      
+      <div class="col">
+        <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">Some example text. Some example text.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    </div>
+
+  </div>
+</div>
 <!-- site footer -->
-<footer class="container-fluid bg-light mt-5">
-  <div class="container">
-    <div class="row">
+<footer class="mt-5">
+  <!-- <div class="container-fluid bg-light">
+    <div class="row pt-2"> -->
       <!-- Footer Column 1 -->
-      <div class="col-md-4">
+      <!-- <div class="col-md-4">
         <h3 class="text-primary">Column 1</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tincidunt elit.</p>
-      </div>
+      </div> -->
       <!-- Footer Column 2 -->
-      <div class="col-md-4">
+      <!-- <div class="col-md-4">
         <h3 class="text-primary">Column 2</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tincidunt elit.</p>
-      </div>
+      </div> -->
       <!-- Footer Column 3 -->
-      <div class="col-md-4">
+      <!-- <div class="col-md-4">
         <h3 class="text-primary">Column 3</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tincidunt elit.</p>
       </div>
     </div>
-    <p class="text-center">
-      <small>&copy; <script>document.write(new Date().getFullYear());</script> iChris Technologies&reg;  All rights Reserved</small>
-      <p>
-  </div>
+  </div> -->
+  <p class="text-center mt-2">
+    <small>&copy; <script>document.write(new Date().getFullYear());</script> iChris Technologies&reg;  All rights Reserved</small>
+  <p>
 </footer>
 
 
@@ -287,21 +354,24 @@
 <script>
   $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-      items: 3, // Display 4 logos on large screens
+      items: 3, // Display 3 logos by default
+      lazyLoad: true,
+      autoHeight: true,
       loop: true,
       autoplay: true,
-      autoplayTimeout: 5000, // Auto-scroll after 5 seconds
-      responsive:{
-        0:{
-          items:1 // Display 1 logo on extra small screens
+      autoplayTimeout: 2000, // Auto-scroll after 5 seconds
+      responsive: {
+        0: {
+          items: 1 // Display 1 logo on extra small screens
         },
-        600:{
-          items:3 // Display 3 logos on small screens
+        600: {
+          items: 3 // Display 3 logos on small screens
         },
-        1000:{
-          items:4 // Display 4 logos on large screens
+        1000: {
+          items: 4 // Display 4 logos on large screens
         }
-      }
+      },
+      autoWidth: true // Adjusts the width of the carousel items based on content
     });
   });
 </script>
