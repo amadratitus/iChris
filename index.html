@@ -8,6 +8,7 @@
   <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
   <!-- Meta Description -->
   <meta name="description" content="Your Best Service delivery company through IT solutions.">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Owl Carousel CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -22,29 +23,6 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3182239353501543"
      crossorigin="anonymous"></script>
   <!--Ads Script-->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/account
-            emailjs.init('WAOW76Nf7CeITfa1N'); //YOUR_PUBLIC_KEY 
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
   <style>
   /* CSS for image styling */
   .owl-carousel img {
@@ -54,13 +32,19 @@
     display: block; /* Remove any extra spacing below the images */
     margin: 0 auto; /* Center the images within the container */
   }
+  #btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  }
 </style>
 </head>
-<body>
+<body  oncontextmenu="return false;">
   <!-- top navbar -->
 <nav class="navbar navbar-expand-sm bg-light navbar-light fw-bold sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
       <img src="./assets/iChris Logo.png" alt="" width="60" height="35" class="d-inline-block align-text-top">
       iChris Technologies
     </a>
@@ -70,13 +54,13 @@
     <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#service">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#choose">Why Choose Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#testimonies">Testimonials</a>
@@ -103,22 +87,22 @@
     <div class="carousel-item active">
       <img src="assets/camera.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5>Camera Installation & Maintenance</h5>
+        <p>Security at your enviroment is guarantee.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="assets/networks.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
+        <h5>Computer Networking & Installation</h5>
+        <p>We have technicians who specialized in networking.</p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="assets/image1.png" class="d-block w-100" alt="...">
+      <img src="assets/mobile.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <h5>Mobile App Development</h5>
+        <p>We are offering the best mobile app design/development at affordable cost.</p>
       </div>
     </div>
   </div>
@@ -240,9 +224,9 @@
   </div>
 </div>
 
-<!-- why choose us -->
-<div id="choose" class="container mt-5">
-  <h2 class="text-primary text-center">Why Choose Us</h2>
+<!-- about us -->
+<div id="about" class="container mt-5">
+  <h2 class="text-primary text-center">About Us</h2>
   <!-- Add reasons to choose your company -->
   <p><strong>iChris Technologies</strong> discovers, develops, and deploys young African tech talent into the exciting tech ecosystem, through accelerated, immersive, 
     project-based online tech training programs and later connecting our brilliant tech talent with diverse local and global work opportunities.
@@ -291,114 +275,279 @@
 <div id="partners" class="container mt-5 text-center">
   <h2 class="text-primary">Our Partners</h2>
   <div class="owl-carousel owl-theme">
-    <div class="item p-5"><img src="./assets/partners/gdsckyu.png" alt="Partner 1"></div>
-    <div class="item p-5"><img src="./assets/partners/ieeekyu.png" alt="Partner 2"></div>
-    <div class="item p-5"><img src="./assets/partners/kyucsakyu.png" alt="Partner 3"></div>
-    <div class="item p-5"><img src="./assets/partners/./gdsckyu.png" alt="Partner 4"></div>
+    <div class="item p-5"><img src="./assets/partners/Cincom_System_Ltd.PNG" alt="Partner 1"></div>
+    <div class="item p-5"><img src="./assets/partners/groc coding school.jpg" alt="Partner 2"></div>
+    <div class="item p-5"><img src="./assets/partners/ME Electrical.png" alt="Partner 3"></div>
+    <div class="item p-5"><img src="./assets/partners/fruitsministries.png" alt="Partner 4"></div>
     <!-- Add more partners as needed -->
   </div>
 </div>
 
-<!--Contact Us-->
-<div id="contact" class="container mt-5">
-  <h2 class="text-primary text-center">Contact Us</h2>
-  <div class="row">
-    <div class="card p-2">
-      <div class="row">
-        <!--contact form-->
-      <div class="col">
-        <form class="row g-3" id="contact-form">
-          <div class="col-md-12">
-            <input type="hidden" name="contact_number">
-            <label for="name" class="form-label">First Name:</label>
-            <input type="text" class="form-control form-control-sm" id="name" name="user_name" placeholder="eg. John Doe" required>
+      <!--Contact Us-->
+<h2 class="text-primary text-center mt-5" id="contact">Contact Us</h2>
+<section class="bg-light py-3 py-md-5" >
+  <div class="container">
+    <div class="row gy-3 gy-md-4 gy-lg-0 align-items-md-center">
+      <div class="col-12 col-lg-6">
+        <div class="row justify-content-xl-center">
+          <div class="col-12 col-xl-11">
+            <h2 class="h1 mb-3">Get in touch</h2>
+            <p class="lead fs-4 text-secondary mb-5">We're always on the lookout to work with new clients. If you're interested in working with us, please get in touch in one of the following ways.</p>
+            <div class="d-flex mb-5">
+              <div class="me-4 text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="mb-0">Address</h4>
+                <address class="mb-0 text-secondary">Banda, Kyambogo Road Kampala</address>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="col-12 col-sm-6">
+                <div class="d-flex mb-2 mb-sm-0">
+                  <div class="me-4 text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+                      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="mb-0">Phone</h4>
+                      <a class="link-secondary text-decoration-none" href="tel:+256700617696">(256) 700-617696</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="me-4 text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+                  <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                  <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="mb-0">E-Mail</h4>
+                  <a class="link-secondary text-decoration-none" href="ichristechnologies@gmail.com">ichristechnologies@gmail.com</a>
+              </div>
+            </div>
           </div>
-          <div class="col-12">
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" class="form-control form-control-sm" id="email" name="user_email" placeholder="example@yourdomain.com" required>
-          </div>
-          <div class="col-12">
-            <label for="message" class="form-label">Message:</label>
-            <textarea class="form-control form-control-sm" rows="5" id="message" name="message"></textarea>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="bg-white border rounded shadow-sm overflow-hidden">
+
+          <form id="contact-form" action="https://formsubmit.co/cc94c17560ee590bb279b41a33bfbc64" method="POST">
+            <input type="hidden" name="_template" value="basic">
+            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+              <div class="col-12">
+                <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control form-control-sm" name="name" value="" required>
+              </div>
+              <div class="col-12 col-md-12">
+                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                    </svg>
+                  </span>
+                  <input type="email" class="form-control form-control-sm" id="email" name="email" value="" required>
+                </div>
+              </div>
+                <input type="hidden" class="form-control form-control-sm" id="subject" name="_subject" value="New Email! ">
+              <div class="col-12">
+                <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                <textarea class="form-control form-control-sm" id="message" name="message" rows="5" required></textarea>
+              </div>
+              <div class="col-12">
+                <div class="d-grid">
+                  <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- site footer -->
+<footer class="mt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <img src="./assets/iChris Logo.png" alt="" width="200px">
+      </div>
+
+      <div class="col-2">
+        <h5>Quick Link</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Testimonials</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Partners</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></li>
+        </ul>
+        <h5>Opening Hours</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Mon - Fri  9am - 5pm</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sat - Sun  9am - 2pm</a></li>
+        </ul>
+      </div>
+
+      <div class="col-3">
+        <h5>Services</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">CCTV Installation and Maintenance</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Computer Networking</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ac Installation and Maintenance</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Computer Repair and Maintenance</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Solar Installation</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Electrical Wiring</a></li>
+        </ul>
+      </div>
+
+      <div class="col-4">
+        <form  action="https://formsubmit.co/cc94c17560ee590bb279b41a33bfbc64" method="POST">
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of whats new and exciting from us.</p>
+          <div class="d-flex w-100 gap-2">
+            <input type="hidden" name="_captcha" value="false">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="email" name="email" class="form-control" placeholder="Email address">
+            <input type="hidden" name="_autoresponse" value="Thank you for your subscription to our newsletter.">
+            <button class="btn btn-primary" type="submit">Subscribe</button>
           </div>
         </form>
       </div>
-      
-      <div class="col">
-        <div class="card">
-        <div class="card-body">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">Some example text. Some example text.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-      </div>
-      </div>
     </div>
-
-    </div>
-
   </div>
-</div>
-<!-- site footer -->
-<footer class="mt-5">
-  <!-- <div class="container-fluid bg-light">
-    <div class="row pt-2"> -->
-      <!-- Footer Column 1 -->
-      <!-- <div class="col-md-4">
-        <h3 class="text-primary">Column 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tincidunt elit.</p>
-      </div> -->
-      <!-- Footer Column 2 -->
-      <!-- <div class="col-md-4">
-        <h3 class="text-primary">Column 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tincidunt elit.</p>
-      </div> -->
-      <!-- Footer Column 3 -->
-      <!-- <div class="col-md-4">
-        <h3 class="text-primary">Column 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tincidunt elit.</p>
-      </div>
-    </div>
-  </div> -->
-  <p class="text-center mt-2">
-    <small>&copy; <script>document.write(new Date().getFullYear());</script> iChris Technologies&reg;  All rights Reserved</small>
-  <p>
+
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="#service" class="nav-link px-2 text-muted">Services</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" id="privacyLink">Privacy Policy</a></li>
+      </ul>
+      <p class="text-center text-muted">&copy; <script>document.write(new Date().getFullYear());</script> iChris Technologies</p>
+    </footer>
+  </div>
+
+  <!-- Back to top button -->
+<button type="button" class="btn btn-danger btn-floating btn-sm rounded-circle" id="btn-back-to-top"><i class="fa fa-arrow-up"></i></button>
+
 </footer>
 
 
-
-
-<!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  emailjs.init("service_3yyny9n"); // Replace with your EmailJS user ID
-
-  document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
-
-    var templateParams = {
-      from_name: name,
-      from_email: email,
-      message: message,
-    };
-
-    emailjs.send("service_3yyny9n", "template_1yyh87j", templateParams)
-      .then(function(response) {
-        console.log("Email sent successfully:", response);
-        alert("Form submitted successfully!");
-      }, function(error) {
-        console.error("Error sending email:", error);
-        alert("Failed to submit the form. Please try again later.");
-      });
-  });
-</script> -->
+<!-- The Modal -->
+<div class="modal fade" id="exampleModalCenter">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header" style="padding: 0.5rem;">
+        <h4 class="modal-title text-success">iChris Technologies | Privacy Policy</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h4 class="text-primary text-center">iChris Technologies</h4>
+        <h6 class="text-primary text-center">Terms & Conditions / Privacy Policy</h6>
+        
+          <div class="text-secondary text-center d-flex justify-content-center">======================================================================</div>
+        
+        <p>This Privacy Policy applies to all our blogs by groc coding school and such other web sites as we may make available from time to time as well as our authorized features or apps and certain limited features of our social media presence that we integrate with and control as described here.</p>
+        
+                                                 <h6 class="text-center text-primary"><u>Information Collected</u></h6>
+        
+        <p>There are two types of information that we obtain from you online, and then store and use:<br>
+        
+        <ul><li> Automatically collected information and voluntarily provided by you to improve our website for better experience.</li></ul></p>
+        
+        
+        <p>We do not collect any personal information from you when you visit our site unless you expressly and voluntarily participate in an activity that asks for it and you voluntarily provide it.</p>
+        <h6 class="text-center text-primary"><u>What we do with the information we collect.</u></h6>
+                  
+        <p>We use voluntarily provided personal information to communicate directly with you including via email, postal mail, text and phone. We do not sell or rent your personal information to third party data vendors or marketing companies. We use non-personal information to administer our site, make it better, and to make business decisions about what programs our customers might like.
+        
+                                       <h6 class="text-center text-primary"><u>Choices and Rights for privacy.</u></h6>
+        
+        <p>No personal information is required to enjoy most of the features of our site. You also can opt out of certain activities like newsletters by unsubscribing.
+        
+        Additionally, you may have certain rights available to you under applicable data protection laws with respect to your personal information.</p>
+        
+                                                 <h6 class="text-center text-primary"><u>Our Use of Cookies</u></h6>
+        
+        <p>We allow certain third parties to use cookies or similar technologies to collect information about your browsing activities over time following your use of the site to help us analyze how you use the site and enhance your experience when you visit the site.</p>
+        
+          <div class="text-primary d-flex justify-content-center">********************** !!! KEY NOTES !!! ************************</div>
+        
+        
+        <p>This privacy policy is a legal document, so clarity is important. We’ll use this section to let you know about some words that have special meanings whenever you see them in this policy. We do this because in the context of this policy, such words have specific meanings which can be found where they are first used, as indicated by bold text below.
+        
+        Whenever we reference “this site”, “our site” or “the site”, we mean GROC CODING SCHOOL, its related sites and such others as we may make available from time to time. When we talk about “authorized features or apps”, we’re referring both to elements of our social media presence viewable from Facebook, Twitter, YouTube, LinkedIn or any of the many other available external third party social media platforms, as well as mobile or other apps we’ve created and distributed to let our customers and followers view our site or otherwise interact with our content. 
+        Last, but definitely not least, when we refer to “personal information”, we mean information that can be used to identify you or that can be easily linked to you. Thus, a list of “personal information” would include such things as your name, address, telephone number, fax number, email address, social security number and date of birth. 
+        <strong>Note</strong>, a domain name or an IP address shall not be considered personal information except where the law directly applicable to our collection of it says otherwise.</p>
+        
+        <h6 class="text-center text-primary"><u>User Age Requirements and Children’s Privacy</u></h6>
+        
+        Federal law imposes special restrictions and obligations on commercial website operators who direct their operations toward, and collect and use information from children under the age of 18. We take those age-related requirements seriously, and consistent with it do not intend for this site or any of our authorized features or apps to be used by children under the age of 18. If we become aware that anyone under the age of 18 has submitted personal information to our site, we will delete that information and will not use it for any purpose whatsoever. We encourage parents and legal guardians to talk with their children about the potential risks of the internet.
+        
+        <h6 class="text-center text-primary"><u>Use of Cookies automatically Collected Information.</u></h6>
+        
+        
+        <p>When you visit our site and agree to their use, basic information is passively collected through your web browser via use of tracking technologies, such as a “cookie” which is a small text file that is downloaded onto your computer or mobile device when you access the site.
+        
+        We use ‘analytical’ cookies which are both session (they expire when you close your browser) and persistent (they remain in operation even after you have closed your browser) types of cookies. We may allow third party service providers to use cookies or similar technologies to collect information about your browsing activities over time following your use of the site. 
+        For example, we use Google Analytics, a service provided by Google, Inc. It requires cookies.</p>
+        
+        
+        <p>The following information we collect through cookies is not personal information and does not identify you.<br>
+          <ul><li>Type of browser and operating system you use;</li></ul>
+          <ul><li>The date and time and length of your  stay or visit;</li></ul>
+          <ul><li>The specific page visited, graphics viewed and any documents downloaded;</li></ul>
+          <ul><li>Links to other sites you accessed from our site;</li></ul>
+          <ul><li>The domain name and IP address from which you accessed our site;</li></ul>      
+        </p>
+        Mobile devices are one possible exception to the rule that our passive, automatic collection activities exclude personal information. We say that because, if you access our site from a phone or other mobile device, the mobile services provider may transmit to us uniquely identifiable mobile device information which allows us to then collect mobile phone associated information. Some mobile phone service providers also operate systems that pinpoint the physical location of devices and we may receive this information as well.
+        
+        Voluntarily Submitted Information
+        
+        We do not sell, rent or trade voluntarily submitted personal information with third parties.
+        
+        <p>Here are some of the ways you voluntarily give us your personal information and how we use it:<br>
+          <ul><li>Emails and Online - When you send us an email, post personal information or upload it to our site, fill out an online form, or respond to a survey, your email address and any other personal information that may be in the content of your message or attached to it, are retained by us and used to respond back directly to you. If you prefer we not collect, use or store this information, please do not email us or submit it to us via one of the methods described above. Instead, you may want to communicate with us by phone or by regular mail.</li></ul>
+          <ul><li>Account or Newsletter Registration - When you register for an account and our various newsletters, you submit personal information to us which we then retain. We use any personal information like email you provide to customize our newsletter to make them more relevant to you. If you include your email address in your registration information we may use it to communicate with you via email.</li></ul>
+          <ul><li>Becoming a Subscriber to Our Service - If you formally become a customer of our product or service, you will be required to enter into a subscription or other agreement. That agreement is separate from both this policy and our related website Terms of Use and will have its own terms and conditions governing confidentiality, data privacy and data security. As a result, those terms and not this policy will apply.</li></ul>
+        </p>
+        
+        <p class="mb-1">Other external social media presence that allow users to post or upload messages, comments, screen names, computer files and other materials is not governed by this policy. If you choose to make personally identifiable information public through these means, we will consider that information to be in the public domain and will not limit its disclosure in the manner described by this policy.
+        
+        <br><h4 class="text-primary mt-2">Sharing Information: Who and Why</h4>
+        
+        <br><strong class="text-secondary">Third Party Service Providers.</strong><br>
+        
+        <li class="list-style-type-none">We may share your information, including personal information, with our service providers and other third parties that help us operate and/or provide products or services for the site and our business including for web site hosting services, database management and credit card processing.
+        
+        <br><strong class="text-secondary mt-2">Social Media Privacy.</strong><br>
+        
+        <li>Personal information collected from our Internal Social Media Features is governed by this policy. Personal information collected when you interact with our External Social Media Presence is governed by the privacy policy of the separate, third party social media platforms that host our External Social Media Presence. Social media platforms are places of public information exchange, and you should have no expectation of privacy when using them.
+        
+        <br><strong class="text-secondary mt-2">Information Security.</strong><br>
+        
+        <li>We will take all reasonable security precautions to protect your personal information provided to our site. Due to somehow risky nature of the Internet, however, we cannot guarantee that your information, whether during transmission or while stored on our systems or otherwise in our care, will be free from unauthorized access or that loss, misuse, destruction or alteration will not occur. We disclaim any liability for any theft or loss of, unauthorized access or damage to, or interception of any data or communications. You should also note that third party companies we engage to provide us with services either to help us in our business, or to perform functions we would otherwise perform ourselves, will have incidental access to your information, including your personal information, as part of the work they perform. We require that they enter into confidentiality and other agreements, but cannot guarantee their compliance.
+        
+        <br><strong class="text-secondary mt-2">Changes to this Privacy Policy</strong><br>
+        
+        <li>We reserve the right to change or update this policy from time to time. Please check our site periodically for such changes to this policy in place at that time. Within a month or days before update we will share emails regarding the update to customers who are using our services. We’ll also provide a summary of changes we’ve made near the end of the new policy.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- Owl Carousel Initialization -->
@@ -425,6 +574,42 @@
       autoWidth: true // Adjusts the width of the carousel items based on content
     });
   });
+</script>
+
+<!--Script to trigger a modal-->
+<script>
+  document.getElementById("privacyLink").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent the default link behavior
+    $('#exampleModalCenter').modal('show'); // Show the modal manually
+  });
+
+
+  //Back To Top Button
+  //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 30 ||
+    document.documentElement.scrollTop > 30
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 </script>
 
 </body>
