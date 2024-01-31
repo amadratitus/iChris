@@ -232,7 +232,6 @@
     project-based online tech training programs and later connecting our brilliant tech talent with diverse local and global work opportunities.
     Our learning model is practical, engaging and ensures our fellows are collaborating on actual platforms and tools used by end users. 
     This allows them to have end to end exposure to dealing with clients, prioritizing feedback, testing and quality assurance, and problem solving.</p>
-  <p>Phasellus eget leo vitae justo varius dignissim. Fusce vel ex id lacus malesuada efficitur.</p>
   <!-- Add more reasons as needed -->
 </div>
 
@@ -240,33 +239,61 @@
 <div id="testimonies" class="container mt-5 text-center">
   <h2 class="text-primary">Testimonials</h2>
   <!-- Add customer testimonials here -->
-  <div class="card">
-    <div class="card-body">
-      <div id="partnersCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <!-- Add partner logos as carousel items -->
-          <div class="carousel-item active">
-            <blockquote class="blockquote">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tincidunt elit.</p>
-              <footer class="blockquote-footer">Client 1</footer>
-            </blockquote>
-          </div>
-          <div class="carousel-item">
-            <blockquote class="blockquote">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tincidunt elit.</p>
-              <footer class="blockquote-footer">Client 2</footer>
-            </blockquote>
-          </div>
-          <div class="carousel-item">
-            <blockquote class="blockquote">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et tincidunt elit.</p>
-              <footer class="blockquote-footer">Client 3</footer>
-            </blockquote>
-          </div>
-          <!-- Add more partners as needed -->
-        </div>
+  <div class="owl-carousel owl-theme">
+<!-- Carousel wrapper -->
+    <div class="item p-5">
+      <div style="width:300px;">
+        <img class="rounded-circle shadow-1-strong mb-4"
+          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar"
+          style="width: 120px;" />
+        <h5 class="mb-1">Anna Deynah</h5>
+        <p>UX Designer</p>
+        <p class="text-muted">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+          praesentium voluptatum deleniti atque corrupti.
+        </p>
       </div>
     </div>
+    <div class="item p-5">
+      <div style="width:300px;">
+        <img class="rounded-circle shadow-1-strong mb-4"
+          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar"
+          style="width: 120px;" />
+        <h5 class="mb-1">John Doe</h5>
+        <p>Web Developer</p>
+        <p class="text-muted">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+          praesentium voluptatum deleniti atque corrupti.
+        </p>
+      </div>
+    </div>
+    <div class="item p-5">
+      <div style="width:300px;">
+        <img class="rounded-circle shadow-1-strong mb-4"
+          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp" alt="avatar"
+          style="width: 120px;" />
+        <h5 class="mb-1">Maria Kate</h5>
+        <p>Photographer</p>
+        <p class="text-muted">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+          praesentium voluptatum deleniti atque corrupti.
+        </p>
+      </div>
+    </div>
+    <div class="item p-5">
+      <div style="width:300px;">
+        <img class="rounded-circle shadow-1-strong mb-4"
+          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar"
+          style="width: 120px;" />
+        <h5 class="mb-1">Maria Kate</h5>
+        <p>Technician</p>
+        <p class="text-muted">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+          praesentium voluptatum deleniti atque corrupti.
+        </p>
+      </div>
+    </div>
+    <!-- Add more partners as needed -->
   </div>
   <!-- Add more testimonials as needed -->
 </div>
@@ -414,10 +441,11 @@
           <h5>Subscribe to our newsletter</h5>
           <p>Monthly digest of whats new and exciting from us.</p>
           <div class="d-flex w-100 gap-2">
-            <input type="hidden" name="_captcha" value="false">
             <label for="newsletter1" class="visually-hidden">Email address</label>
-            <input id="newsletter1" type="email" name="email" class="form-control" placeholder="Email address">
+            <input type="hidden" name="_subject" value="Newsletter SignUp!">
+            <input id="newsletter1" type="email" name="email" class="form-control" placeholder="Email address" required>
             <input type="hidden" name="_autoresponse" value="Thank you for your subscription to our newsletter.">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank-you.html">
             <button class="btn btn-primary" type="submit">Subscribe</button>
           </div>
         </form>
